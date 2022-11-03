@@ -6,13 +6,12 @@ project ("Game")
 add_subdirectory ("TitanEngine")
 add_subdirectory ("Game")
 
-set_target_properties(TitanEngine PROPERTIES
-    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib"
-    LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib"
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
-)
+add_subdirectory ("3rdparty/glfw")
+add_subdirectory ("3rdparty/entt")
+add_subdirectory ("3rdparty/glm")
+add_subdirectory ("3rdparty/spdlog")
 
-set_target_properties(Game PROPERTIES
+set_target_properties(TitanEngine Game glfw EnTT glm spdlog PROPERTIES
     ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib"
     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib"
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
