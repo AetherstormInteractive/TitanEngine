@@ -31,5 +31,6 @@
 *.out
 *.app
 /bin
-/int/build/x64-debug
+/int
+/lib
 /.vs
