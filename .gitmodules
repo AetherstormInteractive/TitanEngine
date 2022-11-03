@@ -1,0 +1,12 @@
+[submodule "3rdparty/glfw"]
+	path = 3rdparty/glfw
+	url = https://github.com/AetherstormRepo/glfw
+[submodule "3rdparty/spdlog"]
+	path = 3rdparty/spdlog
+	url = https://github.com/AetherstormRepo/spdlog
+[submodule "3rdparty/glm"]
+	path = 3rdparty/glm
+	url = https://github.com/AetherstormRepo/glm
+[submodule "3rdparty/entt"]
+	path = 3rdparty/entt
+	url = https://github.com/AetherstormRepo/entt
